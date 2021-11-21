@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   overflow-x: hidden;
 }
@@ -8,9 +9,18 @@ a {
 }
 
 h2 {
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", YuGothic, "Yu Gothic", sans-serif;
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 0.75px;
+}
+
+p {
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans','ＭＳ ゴシック',sans-serif;
+}
+
+li {
+  font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'Meiryo UI', sans-serif;
 }
 
 .container {
@@ -110,10 +120,12 @@ header .container ul li {
 }
 
 .main-visual .text h1 {
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", YuGothic, "Yu Gothic", sans-serif;
   font-size: 60px;
   font-weight: bold;
   text-align: center;
   line-height: normal;
+  color: #191970;
 }
 
 .main-visual .text h1 br:nth-child(2) {
@@ -136,6 +148,12 @@ header .container ul li {
   line-height: normal;
   letter-spacing: 0.25px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 599px) {
+  .main-visual .text p {
+    font-weight: normal;
+  }
 }
 
 .main-visual .text p br:nth-child(1) {
@@ -246,6 +264,7 @@ header .container ul li {
 
 .contents .courses li img {
   max-width: 100%;
+  margin-bottom: 7.5px;
 }
 
 .contact {
@@ -286,7 +305,7 @@ header .container ul li {
   width: 640px;
   height: 50px;
   font-size: 20px;
-  border: 1px solid #B3B6B7;
+  border: 1px solid #b3b6b7;
   border-radius: 100px;
   margin: 5px 0 30px 0;
   padding: 0 30px;
@@ -321,8 +340,8 @@ header .container ul li {
   width: 450px;
   height: 75px;
   margin: 0 auto;
-  background-color: #FF8168;
-  color: #FFF;
+  background-color: #ff8168;
+  color: #fff;
   border-radius: 7.5px;
   font-size: 25px;
   font-weight: bold;
@@ -337,14 +356,14 @@ header .container ul li {
 
 @media screen and (max-width: 599px) {
   footer {
-    border-top: 1px solid #B3B6B7;
+    border-top: 1px solid #b3b6b7;
     width: 90%;
     margin: auto;
   }
 }
 
 footer .container {
-  border-top: 1px solid #B3B6B7;
+  border-top: 1px solid #b3b6b7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: right;
